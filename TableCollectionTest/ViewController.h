@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource>
 
+    @property (strong,nonatomic)UICollectionView *collectionView;
+    @property (strong,nonatomic) UITableView *tableView;
 
 @end
-
